@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap 4 Css -->
+  <link rel="stylesheet" href="archivos/css/bootstrap.min.css">
+  <!-- Css -->
+  <link rel="stylesheet" href="archivos/css/estilos.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Guardería Duoc</title>
+</head>
+
+<body>
+  <div class="contene2r" style="display: none;">
+    <div class="d-inline-block">
+      <img class="preloader-logo" src="archivos/img/Logo Duoc.png" alt="">
+    </div>
+  </div>
+  <div class="centrar">
+    <div class="movil">
+      <div class="cargador-padre" style="display: none;">
+        <div class="text-center">
+          <img class="logo-cargador mb-3" src="archivos/img/Logo Duoc2.png" alt="">
+          <div class="centrar-cargador">
+            <div class="cargador"></div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-light bg-light absoluto">
+        <a class="navbar-brand" href="menu.html"><img class="logo-menu" src="archivos/img/Logo Duoc.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item active">
+              <a class="nav-link azul puntero reservar">Reservar Hora</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link azul puntero camaras">Camaras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link azul puntero grabaciones">Grabaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link azul puntero profesionales">Profesionales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link azul puntero ficha">Ficha</a>
+            </li>
+            <li class="nav-item bg-azul">
+              <a class="nav-link text-light" href="inicio.html">Cerrar Sesión</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="p-4">
+        <div class="contenido bg-light p-3 mb-4 radio-1 text-center">
+          <h3 class="azul">Horario</h3>
+        </div>
+        <div class="bg-light p-3 mt-5 radio-1 calendario" style="display: none;">
+          <div class="text-center">
+            <h4 class="azul nombreMes"></h4>
+          </div>
+          <table class="w-100 text-center azul">
+            <thead>
+              <tr>
+                <th>Lu</th>
+                <th>Ma</th>
+                <th>Mi</th>
+                <th>Ju</th>
+                <th>Vi</th>
+                <th>Sa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-1"></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">01</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">02</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">03</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">04</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">05</button></td>
+              </tr>
+              <tr>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">07</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">08</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">09</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">10</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">11</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">12</button></td>
+              </tr>
+              <tr>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">14</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">15</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">16</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">17</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">18</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">19</button></td>
+              </tr>
+              <tr>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">21</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">22</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">23</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">24</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">25</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">26</button></td>
+              </tr>
+              <tr>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">27</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">28</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">29</button></td>
+                <td class="p-1"><button class="btn btn-info btn-block radio-2">30</button></td>
+                <td class="p-1"></td>
+                <td class="p-1"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="contenido-2 bg-light p-3 mb-4 radio-1 text-center" style="display: none;">
+          <h5 class="azul resumen"></h5>
+          <button class="btn btn-primary btn-block pt-2">Continuar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<!-- Bootstrap 4 -->
+<script src="archivos/js/bootstrap.min.js"></script>
+<!-- Acciones -->
+<script src="archivos/js/acciones.js"></script>
+<!-- Funciones -->
+<script src="archivos/js/funciones.js"></script>

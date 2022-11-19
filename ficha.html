@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 4 Css -->
+    <link rel="stylesheet" href="archivos/css/bootstrap.min.css">
+    <!-- Css -->
+    <link rel="stylesheet" href="archivos/css/estilos.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Guardería Duoc</title>
+</head>
+
+<body>
+    <div class="contene2r" style="display: none;">
+        <div class="d-inline-block">
+            <img class="preloader-logo" src="archivos/img/Logo Duoc.png" alt="">
+        </div>
+    </div>
+    <div class="centrar">
+        <div class="movil">
+            <div class="cargador-padre" style="display: none;">
+                <div class="text-center">
+                    <img class="logo-cargador mb-3" src="archivos/img/Logo Duoc2.png" alt="">
+                    <div class="centrar-cargador">
+                        <div class="cargador"></div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-light bg-light absoluto">
+                <a class="navbar-brand" href="menu.html"><img class="logo-menu" src="archivos/img/Logo Duoc.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link azul puntero reservar">Reservar Hora</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link azul puntero camaras">Camaras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link azul puntero grabaciones">Grabaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link azul puntero profesionales">Profesionales</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link azul puntero ficha">Ficha</a>
+                        </li>
+                        <li class="nav-item bg-azul">
+                            <a class="nav-link text-light" href="inicio.html">Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="p-4">
+                <div class="contenido bg-light p-3 mb-4 radio-1 text-center">
+                  <h3 class="azul">Ficha</h3>
+                </div>
+                <div class="text-center agregarB bg-light p-3 mt-5 radio-1">
+                    <p class="azul"><b>Aún no agregas a tu niño/a</b></p>
+                    <button class="btn btn-block btn-primary"><i class="fas fa-plus"></i> Agregar</button>
+                </div>
+                <div class="formFicha bg-light p-3 mt-5 radio-1" style="display: none;">
+                    <div class="form-group">
+                        <label class="azul"><b>Nombre Menor</b></label>
+                        <input id="nombreNino" class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="azul"><b>Edad</b></label>
+                        <input id="edadNino" class="form-control" type="number">
+                    </div>
+                    <div class="form-group">
+                        <label class="azul"><b>Género</b></label>
+                        <select id="generoNino" class="form-control" name="" id="">
+                            <option value="">Selecciona un Género</option>
+                            <option value="Niño">Niño</option>
+                            <option value="Niña">Niña</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="azul"><b>Fecha Nacimiento</b></label>
+                        <input id="fechaNino" class="form-control" type="date">
+                    </div>
+                    <br>
+                    <button id="registrarNino" class="btn btn-primary btn-block">Agregar</button>
+                </div>
+                <div class="bg-light p-3 mt-5 radio-1 ninoAgregado text-center" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<!-- Bootstrap 4 -->
+<script src="archivos/js/bootstrap.min.js"></script>
+<!-- Acciones -->
+<script src="archivos/js/acciones.js"></script>
+<!-- Funciones -->
+<script src="archivos/js/funciones.js"></script>

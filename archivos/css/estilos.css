@@ -99,6 +99,13 @@
 .contenido-2 {
     margin-top: 30px;
 }
+.logo-check {
+    font-size: 180px;
+}
+.imgNino{
+    width: 120px;
+    border-radius: 50%;
+}
 @media (max-width: 1920px) {
     .movil {
         zoom: 90%;

@@ -2,133 +2,310 @@
     margin: 0;
     padding: 0;
     border: 0;
-}
-.centrar {
+  }
+  .centrar {
     display: flex;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(rgb(63, 130, 230),rgb(1, 55, 201));
-}
-.centrar2 {
+    background: linear-gradient(rgb(63, 130, 230), rgb(1, 55, 201));
+  }
+  .centrar2 {
     display: flex;
     justify-content: center;
-}
-.movil {
+  }
+  .movil {
     margin-top: 100px;
     width: 400px;
     margin-bottom: 120px;
-    background: linear-gradient(rgb(92, 90, 231),rgb(5, 2, 148));
+    background: linear-gradient(rgb(92, 90, 231), rgb(5, 2, 148));
     position: relative;
-}
-.circulo {
+  }
+  .circulo {
     height: 200px;
     width: 400px;
     background-color: rgb(255, 255, 255);
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
-}
-.logo {
+  }
+  .logo {
     width: 150px;
-}
-.cargador-padre{
+  }
+  .cargador-padre {
     width: 100%;
-    height:100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     position: absolute;
-    opacity:0.8;
-    background-color:#ffffffa6;
-    top:0px;
-    left:0;
-    z-index:1031;
-}
-.centrar-cargador {
+    opacity: 0.8;
+    background-color: #ffffffa6;
+    top: 0px;
+    left: 0;
+    z-index: 1031;
+  }
+  .centrar-cargador {
     width: 100%;
-    height:100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-.cargador {
+  }
+  .cargador {
     border: 8px solid #7434db;
     border-top: 8px solid #f1c158;
     border-radius: 50%;
     width: 55px;
     height: 55px;
     animation: girar 2s linear infinite;
-}
-.logo-cargador {
+  }
+  .logo-cargador {
     width: 190px;
-}
-.puntero {
+  }
+  .puntero {
     cursor: pointer;
-}
-.logo-menu {
+  }
+  .logo-menu {
     width: 100px;
-}
-.azul{
+  }
+  .azul {
     color: rgb(5, 2, 148);
-}
-.bg-azul{
+  }
+  .bg-azul {
     background-color: rgb(5, 2, 148);
-}
-.radio-1 {
+  }
+  .radio-1 {
     border-radius: 20px;
-}
-.cuadro-menu {
+  }
+  .cuadro-menu {
     height: 150px;
     width: 150px;
-}
-.zoom{
-    transition: transform .2s; 
-}
-.zoom:hover {
+  }
+  .zoom {
+    transition: transform 0.2s;
+  }
+  .zoom:hover {
     transform: scale(1.1);
-}
-.absoluto {
+  }
+  .absoluto {
     width: 400px;
     position: absolute;
     z-index: 1030;
-}
-.contenido {
+  }
+  .contenido {
     margin-top: 90px;
-}
-.contenido-2 {
+  }
+  .contenido-2 {
     margin-top: 30px;
-}
-.logo-check {
+  }
+  .logo-check {
     font-size: 180px;
-}
-.imgNino{
+  }
+  .imgNino {
     width: 120px;
     border-radius: 50%;
-}
-@media (max-width: 1920px) {
+  }
+  @media (max-width: 1920px) {
     .movil {
-        zoom: 90%;
+      zoom: 90%;
     }
-}
-@media (max-width: 1600px) {
+  }
+  @media (max-width: 1600px) {
     .movil {
-        zoom: 64%;
+      zoom: 64%;
     }
-}
-@keyframes girar {
+  }
+  @keyframes girar {
     from {
       transform: rotate(0deg);
     }
     to {
       transform: rotate(360deg);
     }
-}
-
-/* Calendario */
-table {
+  }
+  
+  /* Calendario */
+  table {
     table-layout: fixed;
-}
-.radio-2 {
+  }
+  .radio-2 {
     border-radius: 15px;
-}
+  }
+  
+  /* camaras */
+  
+  .hover:hover {
+    border: 5px solid #ffea00;
+    overflow: hidden;
+  }
+  .hover:hover img {
+    margin: -5px;
+  }
+  .hover {
+    width: 180px;
+    height: 121px;
+    margin-left: 0px;
+    margin-top: 50px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+  }
+  
+  /* Expandir camara */
+  
+  .expandirCam {
+    width: 20px;
+    margin-left: 89px;
+  }
+  
+  /* Modal */
+  .iconosCam {
+    width: 30px;
+  }
+  
+  .imgModal {
+    width: 366px;
+  }
+  .modal-dialog {
+    width: 400px;
+  }
+  
+  .iconosContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-left: 0;
+  }
+  
+  div.container .iconosContainer {
+    background-color: #ffb700;
+  }
+  
+  .horaFecha {
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    font-size: 15px;
+  }
+  
+  .nombreCam {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    font-size: 15px;
+  }
+  
+  /* Perfil profesionales */
+  
+  .hoverProf:hover {
+    color: #ffb700;
+    overflow: hidden;
+  }
+  .hoverProf:hover img {
+    margin: -5px;
+  }
+  .containerprof figure {
+    position: relative;
+    margin-top: 50px;
+    height: 150px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+  }
+  
+  .containerprof {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .containerprof figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+  }
+  
+  .containerprof figure .titulos {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a6a6a68c;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+  }
+  
+  .containerprof figure:hover > .titulos {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .containerprof figure:hover > .titulos h1 {
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+  .containerprof figure:hover > img {
+    transform: scale(1.3);
+  }
+  
+  .containerprof figure .titulos h1 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    transition: all 500ms ease-out;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    
+  }
+  
+  .containerprof figure .titulos p {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+    font-size: 15px;
+  }
+  
+  
+  button.btn.btn-warning{
+      position: absolute;
+      top: 172px;
+  }
+  
+  
+  /* Grabaciones */
+  .imgGrab{
+      width: 100%;
+      display: block;
+      /* margin-top: 200px; */
+  }
+  .lineaTiempo{
+      width: 100%;
+  }
+  
+  .horaFecha2 {
+      position: absolute;
+      top: 200px;
+      left: 20px;
+      font-size: 15px;
+    }
+    
+  .nombreCam2 {
+      position: absolute;
+      bottom: 490px;
+      right: 20px;
+      font-size: 15px;
+    }
+  
+  .tituloGrab{
+      margin-top: 120px;
+      margin-bottom: 30px;
+      text-align: center;
+      color: white;
+  }
+  

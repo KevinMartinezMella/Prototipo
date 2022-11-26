@@ -53,7 +53,7 @@ $(document).ready(function(){
             <p class="azul"><b>Edad: ${edadNino} años</b></p>
             <p class="azul"><b>Género: ${generoNino}</b></p>
             <p class="azul"><b>Nacimiento: ${fechaNino}</b></p>
-            <a href="reservar.html" class="btn btn-primary btn-block">Aceptar</a>`);
+            <a href="reservar.html" class="btn btn-primary btn-block">Reservar</a>`);
         } else {
             $('.ninoAgregado').html(`
             <center>
@@ -64,7 +64,7 @@ $(document).ready(function(){
             <p class="azul"><b>Edad: ${edadNino} años</b></p>
             <p class="azul"><b>Género: ${generoNino}</b></p>
             <p class="azul"><b>Nacimiento: ${fechaNino}</b></p>
-            <a href="reservar.html" class="btn btn-primary btn-block">Aceptar</a>`);
+            <a href="reservar.html" class="btn btn-primary btn-block">Reservar</a>`);
         }
         $('.formFicha').fadeOut()
         setTimeout(function(){ $('.ninoAgregado').fadeIn(); }, 500);

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap 4 Css -->
+    <link rel="stylesheet" href="archivos/css/bootstrap.min.css" />
+    <!-- Css -->
+    <link rel="stylesheet" href="archivos/css/estilos.css" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Guardería Duoc</title>
+</head>
+
+<body>
+    <div class="centrar">
+        <div class="movil">
+
+            <div style="display: none;" class="mensajes">
+                <div class="bannerwhatsapp mt-5 pt-5 pb-4 text-center">
+                  <img style="width: 80px; height: 80px;border-radius: 50%; border: 6px solid white;" src="archivos/img/nino.jpg" alt="">
+                  <br>
+                  <br>
+                  <h5 class="text-light">Guardería DuocUC</h5>
+                </div>
+                <div class="chat mt-5">
+                  <img class="chat-foto ml-2" src="archivos/img/nino.jpg" alt="">
+                  <span class="ml-2 pb-2 pt-2 pl-3 pr-3 chat-mensaje">Hola, ¿Cómo puedo ayudarte?</span>
+                </div>
+                <div style="display: none;" class="chat-respuesta mt-1 text-right">
+                  <span class="mr-2 pb-2 pt-2 pl-3 pr-3 chat-mensaje-mio"></span>
+                  <img class="chat-foto mr-2" src="archivos/img/nina.jpg" alt="">
+                </div>
+                <div id="escondidoduoc" style="display: none;" class="chat mt-1">
+                  <img class="chat-foto ml-2" src="archivos/img/nino.jpg" alt="">
+                  <span class="ml-2 pb-2 pt-2 pl-3 pr-3 chat-mensaje">Enseguida te aviso.</span>
+                </div>
+                <div class="textochat pl-4 pr-4">
+                  <input id="chatinput" style="width: 308px;" class="form-control d-inline-block" placeholder="Escribe un mensaje . . ." type="text"><button id="enviarChat" class="btn btn-success"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+
+
+            <button style="display: none;" class="whatsapp"> <i class="fa-brands fa-whatsapp"></i></button>
+            <div class="cargador-padre" style="display: none">
+                <div class="text-center">
+                    <img class="logo-cargador mb-3" src="archivos/img/Logo Duoc2.png" alt="" />
+                    <div class="centrar-cargador">
+                        <div class="cargador"></div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-light bg-light absoluto">
+                <a class="navbar-brand" href="menu.html"><img class="logo-menu" src="archivos/img/Logo Duoc.png"
+                        alt="" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link azul puntero reservar">Reservar Hora</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link azul puntero camaras">Camaras</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link azul puntero mishoras">Mis Horas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link azul puntero profesionales">Profesionales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link azul puntero ficha">Ficha</a>
+                        </li>
+                        <li class="nav-item bg-azul">
+                            <a class="nav-link text-light" href="inicio.html">Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="contenido bg-light p-2 mr-4 ml-4 radio-1 text-center">
+                <h3 class="azul">Mis Horas</h3>
+            </div>
+            <div style="display: none;" class="p-3 aparecedor">
+                <div class="bg-light mt-3 radio-1">
+                    <div class="text-center p-2 pt-3">
+                        <input style="border:1px solid black" placeholder="Buscar" class="d-inline-block pb-1 pl-2"
+                            type="text"><button class="btn btn-primary btn-sm"><i class="fas fa-search"></i></button>
+                    </div>
+                    <table style="font-size: 13px;" class="table text-center">
+                        <thead>
+                            <tr>
+                                <th style="width: 110px;">Niño/a</th>
+                                <th>Fecha</th>
+                                <th>Estado</th>
+                                <th style="width: 80px;">Detalle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="trOpcion">
+                                <td style="width: 110px;">Alice Martínez</td>
+                                <td>27/11/2022</td>
+                                <td id="tdEstado">Reservada</td>
+                                <td id="tdOpcion" style="width: 80px;">
+                                    <button id="btnConfirmar" style="width: 20px; padding: 2px; display: inline-block;"
+                                        class="btn btn-primary btn-sm"><i class="fas fa-check"></i></button>
+                                    <button id="btnAnular" style="width: 20px; padding: 2px; display: inline-block;"
+                                        class="btn btn-danger btn-sm"><i class="fas fa-xmark"></i></button>
+                                    <button style="display: none;" id="btnConfirmado" data-target="#modalDetalle" data-toggle="modal" class="btn btn-info btn-sm"><i class="fas fa-info-circle"></i></button>
+                                </td>
+                            </tr>
+                            <tr class="bg-danger-light">
+                                <td style="width: 110px;">Alice Martínez</td>
+                                <td>23/11/2022</td>
+                                <td>Anulada</td>
+                                <td style="width: 80px;"><button disabled class="btn btn-info btn-sm"><i
+                                            class="fas fa-info-circle"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 110px;">Alice Martínez</td>
+                                <td>15/11/2022</td>
+                                <td>Confirmada</td>
+                                <td style="width: 80px;">
+                                    <button data-target="#modalDetalle" data-toggle="modal" class="btn btn-info btn-sm"><i class="fas fa-info-circle"></i></button>
+                                </td>
+                            </tr>
+                            <tr class="bg-danger-light">
+                                <td style="width: 110px;">Alice Martínez</td>
+                                <td>10/11/2022</td>
+                                <td>Anulada</td>
+                                <td style="width: 80px;"><button disabled class="btn btn-info btn-sm"><i
+                                            class="fas fa-info-circle"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="text-center p-2 pt-3">
+                        <button class="btn btn-primary">1</button>
+                        <button class="btn btn-light">2</button>
+                        <button class="btn btn-light">3</button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalDetalle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog modal-dialog-centered">
+                            <div class="modal-content m-3">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Detalle Agenda Guardería</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label><b>Niño/a</b></label>
+                                        <input class="form-control" disabled value="Alice Martínez" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label><b>Cuidador/a</b></label>
+                                        <input class="form-control" disabled value="Daniela Ferrada" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label><b>Horario</b></label>
+                                        <input class="form-control" disabled value="Vespertino" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label><b>Fecha</b></label>
+                                        <input class="form-control" disabled value="15-11-2022" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label><b>Estado Hora</b></label>
+                                        <input class="form-control" disabled value="Confirmada" type="text">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<!-- Bootstrap 4 -->
+<script src="archivos/js/bootstrap.min.js"></script>
+<!-- Funciones -->
+<script src="archivos/js/funciones.js"></script>
+<!-- Acciones -->
+<script src="archivos/js/acciones.js"></script>

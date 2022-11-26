@@ -1,166 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap 4 Css -->
-    <link rel="stylesheet" href="archivos/css/bootstrap.min.css">
-    <!-- Css -->
-    <link rel="stylesheet" href="archivos/css/estilos.css">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Guardería Duoc</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap 4 Css -->
+  <link rel="stylesheet" href="archivos/css/bootstrap.min.css">
+  <!-- Css -->
+  <link rel="stylesheet" href="archivos/css/estilos.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Guardería Duoc</title>
 </head>
+
 <body>
   <!-- Logo -->
-    <div class="centrar">
-        <div class="movil">
-            <div class="cargador-padre" style="display: none;">
-                <div class="text-center">
-                    <img class="logo-cargador mb-3" src="archivos/img/Logo Duoc2.png" alt="">
-                    <div class="centrar-cargador">
-                        <div class="cargador"></div>
-                    </div>
-                </div>
-            </div>
+  <div class="centrar">
+    <div class="movil">
+      <div style="display: none;" class="mensajes">
+        <div class="bannerwhatsapp mt-5 pt-5 pb-4 text-center">
+          <img style="width: 80px; height: 80px;border-radius: 50%; border: 6px solid white;" src="archivos/img/nino.jpg" alt="">
+          <br>
+          <br>
+          <h5 class="text-light">Guardería DuocUC</h5>
+        </div>
+        <div class="chat mt-5">
+          <img class="chat-foto ml-2" src="archivos/img/nino.jpg" alt="">
+          <span class="ml-2 pb-2 pt-2 pl-3 pr-3 chat-mensaje">Hola, ¿Cómo puedo ayudarte?</span>
+        </div>
+        <div style="display: none;" class="chat-respuesta mt-1 text-right">
+          <span class="mr-2 pb-2 pt-2 pl-3 pr-3 chat-mensaje-mio"></span>
+          <img class="chat-foto mr-2" src="archivos/img/nina.jpg" alt="">
+        </div>
+        <div id="escondidoduoc" style="display: none;" class="chat mt-1">
+          <img class="chat-foto ml-2" src="archivos/img/nino.jpg" alt="">
+          <span class="ml-2 pb-2 pt-2 pl-3 pr-3 chat-mensaje">Enseguida te aviso.</span>
+        </div>
+        <div class="textochat pl-4 pr-4">
+          <input id="chatinput" style="width: 308px;" class="form-control d-inline-block" placeholder="Escribe un mensaje . . ." type="text"><button id="enviarChat" class="btn btn-success"><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+      <button style="display: none;" class="whatsapp"> <i class="fa-brands fa-whatsapp"></i></button>
+      <div class="cargador-padre" style="display: none;">
+        <div class="text-center">
+          <img class="logo-cargador mb-3" src="archivos/img/Logo Duoc2.png" alt="">
+          <div class="centrar-cargador">
+            <div class="cargador"></div>
+          </div>
+        </div>
+      </div>
 
-            <!-- Navbar -->
-            <nav class="navbar navbar-light bg-light absoluto">
-                <a class="navbar-brand" href="menu.html"><img class="logo-menu" src="archivos/img/Logo Duoc.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav text-center">
-                    <li class="nav-item">
-                      <a class="nav-link azul puntero reservar">Reservar Hora</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link azul puntero camaras">Camaras</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link azul puntero grabaciones">Grabaciones</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link azul puntero profesionales">Profesionales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link azul puntero ficha">Ficha</a>
-                    </li>
-                    <li class="nav-item bg-azul">
-                        <a class="nav-link text-light" href="inicio.html">Cerrar Sesión</a>
-                    </li>
-                  </ul>
-                </div>
-            </nav>
+      <!-- Navbar -->
+      <nav class="navbar navbar-light bg-light absoluto">
+        <a class="navbar-brand" href="menu.html"><img class="logo-menu" src="archivos/img/Logo Duoc.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a class="nav-link azul puntero reservar">Reservar Hora</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link azul puntero camaras">Camaras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link azul puntero mishoras">Mis Horas</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link azul puntero profesionales">Profesionales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link azul puntero ficha">Ficha</a>
+            </li>
+            <li class="nav-item bg-azul">
+              <a class="nav-link text-light" href="inicio.html">Cerrar Sesión</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-            <!-- Perfil cuidadores  -->
-
-            <div class="container mt-5">
-              <div class="row">
-              <div class="col-lg-6">
-                <div class="containerprof">
-                  <figure>
-                    <img src="archivos/img/cuidadores/1.jpg" class="hoverProf" alt="..." />
-                    <div class="titulos">
-                      <h1 class="nombreprof">Francisca Gomez</h1>
-                    <p class="carreraprof">Parvularia</p>
-                    <!-- Parvulario -->
-                    <!-- Asistente de parvulo -->
-                    </div>
-                  </figure>
-                    <button  type="button" class="btn btn-warning cuidadores">Más detalles</button>
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="containerprof">
-                    <figure>
-                      <img src="archivos/img/cuidadores/2.jpg" class="hoverProf" alt="..." />
-                      <div class="titulos">
-                        <h1 class="nombreprof">Juliana Minguez</h1>
-                      <p class="carreraprof">Parvularia</p>
-                      <!-- Parvulario -->
-                      <!-- Asistente de parvulo -->
-                      </div>
-                    </figure>
-                      <button type="button" class="btn btn-warning">Más detalles</button>
-                    </div>
-                </div>
-      
-                  <div class="col-lg-6">
-                    <div class="containerprof">
-                      <figure>
-                        <img src="archivos/img/cuidadores/3.jpg" class="hoverProf" alt="..." />
-                        <div class="titulos">
-                          <h1 class="nombreprof">Laia Alvarez</h1>
-                        <p class="carreraprof">Parvularia</p>
-                        <!-- Parvulario -->
-                        <!-- Asistente de parvulo -->
-                        </div>
-                      </figure>
-                        <button type="button" class="btn btn-warning">Más detalles</button>
-                      </div>
-                </div>
-      
-                  <div class="col-lg-6">
-                    <div class="containerprof">
-                      <figure>
-                        <img src="archivos/img/cuidadores/4.jpg" class="hoverProf" alt="..." />
-                        <div class="titulos">
-                          <h1 class="nombreprof">Trinidad Royo</h1>
-                        <p class="carreraprof">Parvularia</p>
-                        <!-- Parvulario -->
-                        <!-- Asistente de parvulo -->
-                        </div>
-                      </figure>
-                        <button type="button" class="btn btn-warning">Más detalles</button>
-                      </div>
-                </div>
-      
-                  <div class="col-lg-6">
-                    <div class="containerprof">
-                      <figure>
-                        <img src="archivos/img/cuidadores/5.jpg" class="hoverProf" alt="..." />
-                        <div class="titulos">
-                          <h1 class="nombreprof">Arantxa Ruano</h1>
-                        <p class="carreraprof">Parvularia</p>
-                        <!-- Parvulario -->
-                        <!-- Asistente de parvulo -->
-                        </div>
-                      </figure>
-                        <button type="button" class="btn btn-warning">Más detalles</button>
-                      </div>
-                </div>
-
-                  <div class="col-lg-6">
-                    <div class="containerprof">
-                      <figure>
-                        <img src="archivos/img/cuidadores/6.jpg" class="hoverProf" alt="..." />
-                        <div class="titulos">
-                          <h1 class="nombreprof">Noah Amado</h1>
-                        <p class="carreraprof">Parvulario</p>
-                        <!-- Parvulario -->
-                        <!-- Asistente de parvulo -->
-                        </div>
-                      </figure>
-                        <button type="button" class="btn btn-warning">Más detalles</button>
-                      </div>
-                </div>
+      <!-- Perfil cuidadores  -->
+      <div class="container mt-5">
+        <div style="margin-top: 70px; margin-bottom: 15px; padding: 5px;" class="bg-light radio-1 text-center">
+          <h3 class="azul">Profesionales</h3>
+        </div>
+        <div class="card mb-3 radio-1 azul">
+          <div class="card-header text-center">
+            <span style="font-size: 12px;">Fernanda Arriagada - Técnico en Parvulo</span>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-4 text-right">
+                <img class="cuidadorFoto" src="archivos/img/cuidadores/1.jpg" alt="">
               </div>
-
-
-
-
+              <div class="col-8 text-center">
+                <p style="font-size: 12px;">Técnico con más de 5 años de experiencia en cuidado de niños</p>
+                <p style="font-size: 12px;"><i class="fas fa-clock"></i> Vespertino &nbsp;&nbsp; <i class="fas fa-phone"></i> 911245345</p>
+              </div>
             </div>
           </div>
         </div>
+
+        <div class="card mb-3 radio-1 azul">
+          <div class="card-header text-center">
+            <span style="font-size: 12px;">Marco Valenzuela - Fonoaudiólogo</span>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-4 text-right">
+                <img class="cuidadorFoto" src="archivos/img/cuidadores/4.jpg" alt="">
+              </div>
+              <div class="col-8 text-center">
+                <p style="font-size: 12px;">Experto en fonoaudiología y cuidados niños diferenciales</p>
+                <p style="font-size: 12px;"><i class="fas fa-clock"></i> Diurno &nbsp;&nbsp; <i class="fas fa-phone"></i> 996534215</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card mb-3 radio-1 azul">
+          <div class="card-header text-center">
+            <span style="font-size: 12px;">Francisca Vera - Educación Parvularia</span>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-4 text-right">
+                <img class="cuidadorFoto" src="archivos/img/cuidadores/3.jpg" alt="">
+              </div>
+              <div class="col-8 text-center">
+                <p style="font-size: 12px;">Profesional especializada en Educación Parvularia y diferencial</p>
+                <p style="font-size: 12px;"><i class="fas fa-clock"></i> Diurno &nbsp;&nbsp; <i class="fas fa-phone"></i> 953452154</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card mb-3 radio-1 azul">
+          <div class="card-header text-center">
+            <span style="font-size: 12px;">Daniela Ferrada - Psicología Infantil</span>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-4 text-right">
+                <img class="cuidadorFoto" src="archivos/img/cuidadores/5.jpg" alt="">
+              </div>
+              <div class="col-8 text-center">
+                <p style="font-size: 12px;">Titulada de Psicología Infantil con más de 8 años de experiencia</p>
+                <p style="font-size: 12px;"><i class="fas fa-clock"></i> Vespertino &nbsp;&nbsp; <i class="fas fa-phone"></i> 975425156</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
     </div>
+  </div>
+  </div>
 </body>
+
 </html>
 <!-- Jquery -->
-<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <!-- Bootstrap 4 -->
 <script src="archivos/js/bootstrap.min.js"></script>
 <!-- Funciones -->

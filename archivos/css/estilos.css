@@ -13,6 +13,24 @@
     display: flex;
     justify-content: center;
   }
+  .volver-btn {
+    position:absolute;
+    width:80px;
+    height:60px;
+    bottom:40px;
+    left:40px;
+    background-color:#2531d3;
+    color:#FFF;
+    border-radius:20px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+    text-decoration: none;
+  }
+
+  .volver-btn:hover{
+    color: white;
+  }
   .movil {
     margin-top: 100px;
     width: 400px;
